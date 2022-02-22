@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.miniSlider {
+  stroke-dasharray: 600;
+  stroke-dashoffset: -600;
+  stroke: rgb(227,25,30);
+}
+
+.miniSliderShadow {
+  stroke-dasharray: 100000000000000000000000000000;
+  stroke-dashoffset: 0;
+  stroke: black;
+}
+
+.activeMiniSlider {
+  animation: 25.6s tumbleweed ease-in-out forwards;
+}
+
+@keyframes tumbleweed {
+  0% {
+    stroke-dashoffset: -600;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 600;
+  }
+}
+
+.miniSlidersContainer {
+  display: flex;
+  flex-direction: column;
+}
+.aParent{
+  width: 169.8px !important;
+  height: 128.5px !important;
+  margin: 2px 2px;
+  position: relative;
+  border-radius: 20px;
+  background: center / cover no-repeat url('https://img5.goodfon.com/wallpaper/nbig/0/aa/yinyu-nico-benghuai-xueyuan-honkai-impact-raiden-mei.jpg');
+}
