@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_inscription.css">
+    <title>Inscription</title>
+</head>
+<body>
+    <div class="container">
+        <!-- zone de connexion -->            
+            <form class="formContainer" autocomplete="off">
+                <div class="row">
+                    <label>Votre Nom</label>
+                    <input type="text" placeholder="Nom" name="name" required required="Veuillez completer votre champs">
+                </div>
+                <div class="row">
+                    <label>Votre prénom</label>
+                    <input type="text" placeholder="Prénom" name="mail" required required="Veuillez completer votre champs">
+                </div>
+                <div class="row">
+                    <label>Votre Email</label>
+                    <input type="email" placeholder="Entrez votre email" name="mail" required required="Veuillez completer votre champs">
+                </div>
+                <div class="row">
+                    <label>Mot de passe</label>
+                    <input type="password" placeholder="Entrer le mot de passe" name="password" required required="mot de passe incorrect">
+                </div>
+                <div class="row">
+                    <label>Validez votre mot de passe</label>
+                    <input type="password" placeholder="Entrer le mot de passe" name="password" required required="mot de passe incorrect">
+                </div>
+                <!--creation du bouton de creation de compte. href a faire pour qu'une fois connecté, on revienne vers a page d'accueil-->
+                <div class="btn">
+                <a href=""><input class="btnConnexion" id="submit_button" type="submit" value="Creer un compte"></a>                
+            </div>
+        </form>
+        </div>
+</form>
+</body>
+</html>

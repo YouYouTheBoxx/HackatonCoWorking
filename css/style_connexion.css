@@ -1,0 +1,69 @@
+@font-face {
+    font-family:'montserrat' ;
+    src: url("../font/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none
+    ;
+}
+body{
+    font-family: 'montserrat';
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background:center / cover no-repeat linear-gradient(rgba(246,160,41,0.3),rgba(246,160,41,0.3)), center / cover no-repeat url(../img/projetColibri.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formContainer{
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 100px;
+    background-color: white;
+    -webkit-box-shadow: 5px 5px 5px 0px #3333331c, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 5px 0px #3333331c, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+h1{
+    margin:5px 0;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+.formContainer input{
+    margin:15px 0;
+    min-width: 100px;
+    padding: 5px 20px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    text-align: center;
+}
+.formContainer > .btn input{
+    margin: 0 60px;
+    min-width: 200px ;
+    border: 0px solid transparent;
+    background-color: rgb(246,207,102);
+    border-radius: 0 25px 0 25px;
+    cursor: pointer;
+}
+/*@media pour creer le responsive*/
+@media (max-width : 750px){
+    .formContainer > .btn{
+        display: flex;
+        flex-direction: column;
+    }
+    .formContainer > .btn input{
+        margin: 15px 10px;
+    }
+}
