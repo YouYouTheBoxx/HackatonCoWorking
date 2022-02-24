@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/mode_paiment.css" />
+    <title></title>
+  </head>
+  <body class="flex">
+    
+    <a class="arrow" href="../../index.html"><i class="fa-solid fa-angles-left"></i></a>
+    <div class="container">
+      <div class="md_paiment">
+        <h2>Type de paiment</h2>
+        <form class="radio_container">
+          <div class="item">
+            <input class="radio" type="radio" id="carte_bancaire" name="typep" />
+            <label for="carte_bancaire"
+              ><i class="fa-solid fa-address-card"></i> Carte
+              carte_bancaire</label
+            >
+          </div>
+
+          <div class="item">
+            <input  type="radio" id="Visa" name="typep" />
+            <label for="Visa"><i class="fa-brands fa-cc-visa"></i> Visa</label>
+          </div>
+
+          <div class="item">
+            <input type="radio" id="Mastecard" name="typep" />
+            <label for="Mastecard">
+              <i class="fa-brands fa-cc-mastercard"></i> Mastecard</label
+            >
+          </div>
+
+          <div class="item">
+            <input type="radio" id="Paypal" name="typep" />
+            <label for="Paypal"><i class="fa-brands fa-paypal"></i> Paypal</label>
+        </form>
+      </div>
+      <!-- paiment_input -->
+      <div>
+        <form class="paiment_input">
+          <label for="n_carte">N° de carte</label>
+          <input type="text" id="n_carte" name="n_carte" maxlength="18"><br>
+
+          <label for="d_expiration">Date d'expiration</label><br>
+          <input placeholder="mm" type="number" id="d_expiration_m" name="d_expiration" min="1" max="31"> /
+          <input placeholder="aa" type="number" id="d_expiration_j" name="d_expiration" min="1" max="12" >
+          <br>
+          <label for="crypto_visuel">Cryptogramme visuel <br> <div class="msg_crypto"><p>De quoi s'agit-il?</p></div></label>
+          <input type="text" id="crypto_visuel" name="crypto_visuel" maxlength="3">
+          <button class="btn_valider">Valider</button>
+        </form>
+      </div>
+
+
+          
+      </div>
+      <div class="reglement"><p>
+        En adhérent à notre association, vous pourrez avoire
+        accès à notre planning générale ainsi qu'à pleins 
+        d'autres informations! <br>
+        Notre association vous remercie pour votre collaboration. <br> <br>
+
+        Vous pouvez consultez nos <span>mention légale</span> concernant notre gestion de vos données personnelles.
+      </p>
+      </div>
+      
+    </div>
+	<!-- <script src="../js/headerFooterIncluder.js"></script> -->
+  </body>
+</html>

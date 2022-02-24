@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.miniSlider {
+  stroke-dasharray: 600;
+  stroke-dashoffset: -600;
+  stroke: rgb(249,208,103);
+}
+
+.miniSliderShadow {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 0;
+  stroke: black;
+}
+
+.activeMiniSlider > .miniSlider {
+  animation: 16.5s tumbleweed ease-in-out forwards; //25.6s
+}
+
+@keyframes tumbleweed {
+  0% {
+    stroke-dashoffset: -600; //-600
+  }
+  100% {
+    stroke-dashoffset: 600;
+  }
+}
+
+.miniSlidersContainer {
+  width: fit-content;
+  display: flex;
+
+}
+
+.salleMiniSlide {
+  width: fit-content;
+}
+
+.miniSlide {
+  width: 113px; // 170
+  height: 86px; // 129
+  margin: 2px 2px;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+$wallpapers:
+        1 '../img/salle colibri.jpg',
+        2 '../img/salle coquelicot.jpg',
+        3 '../img/salle openspace.png',
+        4 '../img/salle ruche.jpg',
+        5 '../img/salle cocon.jpg';
+
+@each $index, $src in $wallpapers {
+  #miniSlide#{$index} {
+    background: center / cover no-repeat url($src);
+  }
+}
+
+.SlidersContainer {
+  display: flex;
+  height: 60%;
+  width: 70%;
+  position: relative;
+  margin: 30px auto;
+  i {
+    font-size: 36px;
+    margin: 0 15px;
+    cursor: pointer;
+    align-self: center;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+    transition: 1.25s all;
+  }
+
+  .descriptionContainer {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 15px;
+    overflow: hidden;
+    transition: 2.25s all;
+    span {
+      display: block;
+      margin: 5px auto;
+      /*line-break: strict;*/
+      text-overflow: clip;
+    }
+    p {
+      width: 90%;
+      overflow: hidden;
+      min-height: max-content;
+      transition: 2.25s all;
+    }
+    p:nth-child(1) {
+      font-size: 12px;
+    }
+    p:nth-child(2) {
+      font-size: 14px;
+      display: none;
+    }
+    > a {
+      align-self: center;
+      max-width: 1000px;
+      overflow: hidden;
+      transform: translateX(-15px) scale(0.75);
+      transition: 3.75s all;
+      button {
+        cursor: pointer;
+        padding: 13px 60px;
+        background-color: rgb(249,208,103);
+        border: 0 solid transparent;
+        border-radius: 50px;
+        font-size: 22px;
+        transition: 2.25s all;
+      }
+    }
+  }
+}
+
+.agenda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 90%;
+  height: 75vh;
+  z-index: 5;
+  > a {
+    margin-top: 25px;
+  }
+}
+
+.iAgenda {
+  width: 90%;
+  height: 75vh;
+}
+
+.agendaContainerNoDisplay {
+  display: none;
+}
+
+.btnReservation > button {
+  cursor: pointer;
+  padding: 20px 150px;
+  background-color: rgb(249,208,103);
+  border: 0 solid transparent;
+  border-radius: 50px;
+  font-size: 22px;
+  transition: 2.25s all;
+}
+
+.agendaContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 4;
+  background-color: rgba(0,0,0,0.75);
+}
+
+.agendaNoDisplay {
+  display: none;
+}
+
+.salleSlideTitle {
+  align-self: center;
+  border: 1px solid black;
+  border-radius: 100px;
+  padding: 15px 45px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  overflow: hidden;
+  max-width: 350px;
+  max-height: 200px;
+  transition: 2.25s all;
+}
+
+.salleSlideTitle > h4 {
+  font-size: 18px;
+  min-width: max-content;
+}
+
+.salleSlide {
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: 2.25s all;
+  margin: 0 10px;
+  position: relative;
+}
+
+.salleNoDisplay {
+  /*display: none;*/
+  width: 60px;
+  transition: 2.25s all;
+  > .salleSlideTitle {
+    padding: 15px 0;
+    overflow: hidden;
+    max-width: 0;
+    border: 0 solid transparent;
+    border-radius: 0;
+    left: 50%;
+    transition: 2.25s all;
+  }
+  > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    object-fit: cover;
+    transition: 1.25s all;
+  }
+  > .descriptionContainer {
+    width: 0;
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    transition: 2.25s all;
+    p {
+      width: 1500px;
+      text-align: center;
+      min-height: max-content;
+      transition: 2.25s all;
+    }
+    > a {
+      max-width: 0;
+      transform: translateX(-15px);
+      button {
+        cursor: pointer;
+        overflow: hidden;
+        border: 0 solid transparent;
+        border-radius: 0;
+        transition: 3.75s all;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 825px){
+  .SlidersContainer {
+    width: 93%;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .salleNoDisplay {
+    display: none;
+  }
+}
+
+.presentationSalles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.errorNoAdherent {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: 3;
+  background-color: rgba(0,0,0,0.89);
+  align-items: center;
+  justify-content: center;
+}
+
+.btnConnexion {
+  margin: 0 60px;
+  min-width: 200px;
+  padding: 15px 75px;
+  border: 0px solid transparent;
+  background-color: #f6cf66;
+  border-radius: 0 25px 0 25px;
+  text-align: center;
+  cursor: pointer;
+}

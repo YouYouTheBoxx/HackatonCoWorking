@@ -1,0 +1,187 @@
+@font-face {
+  font-family: Montserrat-italic;
+  src: url(../font/Montserrat-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: opneserfi;
+  src: url(../font/OpenSerif-Book.ttf);
+}
+@font-face {
+  font-family: variableF;
+  src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+  font-family: variableF;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/******************** BODY *****************************/
+
+.arrow {
+  color: black;
+  position: fixed;
+  left: 30px;
+  top: 30px;
+}
+
+main {
+  font-family: variableF;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* container mode paiment */
+
+.container {
+  margin: 60px 50px;
+  border-radius: 30px;
+  width: 100vw;
+  height: auto;
+  border: 1px solid rgb(209, 209, 209);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.md_paiment {
+  margin: 40px 60px;
+  width: 300px;
+  height: auto;
+  /* background-color: rgba(211, 211, 211, 0.534); */
+}
+
+.reglement {
+  margin: 40px 60px;
+  width: 300px;
+  height: auto;
+  background-color: rgba(204, 168, 70, 0.534);
+}
+
+/******************** reglement ***********************/
+
+.reglement p {
+  padding: 100px 13px;
+  text-align: center;
+  line-height: 25px;
+  font-family: variableF;
+}
+
+.reglement span {
+  font-weight: bold;
+}
+
+.reglement {
+  box-shadow: 11px 14px 29px -6px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 11px 14px 29px -6px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 11px 14px 29px -6px rgba(0, 0, 0, 0.33);
+  border-radius: 40px;
+}
+
+/*************** MODE de paiment ****************/
+.md_paiment h2 {
+  width: auto;
+  border-top: 1px solid rgb(184, 184, 184);
+  font-size: 20px;
+  padding: 20px;
+}
+
+.radio_container {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+}
+
+/********************* PAIMENT  *******************/
+input {
+  margin: 10px 0;
+  padding-left: 10px;
+}
+
+#d_expiration_m,
+#d_expiration_j {
+  padding-left: 10px;
+  width: 50px;
+}
+
+.paiment_input {
+  padding-top: 20px;
+  border-top: 1px solid rgb(184, 184, 184);
+  margin: 50px 30px;
+  line-height: 25px;
+}
+
+/* form:nth-child(1) {
+  border-top: 1px solid rgb(184, 184, 184);
+} */
+
+.msg_crypto p {
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.btn_valider {
+  padding: 3px 75px;
+  border-radius: 20px;
+  font-size: 13px;
+  background-color: rgba(204, 168, 70, 0.534);
+}
+
+.btn_valider:hover {
+  background-color: rgba(255, 198, 42, 0.5);
+}
+.btn_valider:active {
+  background-color: rgb(255, 198, 42);
+}
+
+input {
+  background-color: rgba(204, 168, 70, 0.534);
+  border-radius: 10px;
+}

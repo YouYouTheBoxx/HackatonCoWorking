@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+body {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;   
+}
+h1{
+    text-align: center;
+    font-weight: 500;
+}
+.gros_parapgraphe{
+
+    padding: 20px 20px;
+}
+img {
+	max-width: 100%;
+}
+p {
+    text-align: center;
+    color: black;
+    margin: 0 100px;
+    font-style: italic;
+    
+}
+
+.description {
+    text-align: center;
+}
+
+.description>p{
+    /*width: 70%;*/
+    max-width: 70%;
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.container_flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: center / cover no-repeat url(../img/texture.png);
+    height: 553px;  
+    
+}
+.hover{
+    display: flex;
+    flex-direction: column;
+}
+.hover>.image{
+    text-align: center;
+}
+.hover:hover{
+    zoom: 98%;
+}
+.image>img{
+    border-radius: 10px;
+}
+.container_flex>div:first-child {
+    width: 30%;  
+}
+.container_flex>div:nth-child(2) {  
+    width: 30%;
+}
+.container_flex>div:last-child { 
+    width: 30%;
+}
+@media screen and (max-width: 1000px) {
+    .container_flex {
+      display: block;
+      flex-direction: column;
+      align-items: center;
+     
+    }
+    
+    .hover{
+        padding-left: 40%;
+    }
+    .description>p{
+        width: 50%;
+        text-align: center;
+    }
+    .coworkers>h2{
+        margin-top: 500px;
+    }
+    .hover{
+        margin-top: 10px;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .coworkers{
+        padding-top: 200px;
+    }
+  }
+
+/*///////////////////////////////////partie cowkers////////////////////////////*/
+.coworkers>h2 {
+    /* text-decoration: underline; */
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    width: 200px;
+    margin-left: 43%;
+
+}
+.caption>p {
+    text-align: left;
+}
+
+.coworkers {
+    width: 80%;
+    margin: auto;
+}
+
+.diapo{
+    position: relative;
+    overflow: hidden;
+    height: auto;
+      
+}
+.elements {
+    display: flex;  
+}
+.element{
+    flex: 1 0 100%;
+    position: relative;
+    border-top: 1px solid #AEA954;
+    border-bottom: 1px solid #AEA954;
+}
+.element > img {
+    width: 100%;
+    height: 400px;  
+}
+.caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    
+}
+.caption_container{
+    border: 3px solid rgba(196, 193, 193, 0.459);
+    margin: 10px;
+    background-color: rgba(211, 206, 206, 0.712);
+    border-radius: 20px;
+    color: black;
+    height: 360px;
+}
+.caption_container>img{
+    border-radius: 150px;
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+	object-fit: cover;
+}
+.caption_container>p{
+    color: black;
+}
+#nav-gauche, #nav-droite{
+    position: absolute;
+    top: 50%;
+    color: #AEA954;
+    transform: translate(-50%);
+    font-size: 3rem;
+    cursor: pointer;
+}
+#nav-gauche{
+    left: 30px;
+}
+#nav-droite{
+    right: 0;   
+}
+#nav-droite:hover{
+    color: #F8D167;
+}
+#nav-gauche:hover{
+    color: #F8D167;
+}
+
+/*///////////////////////////////////partie coworkers page 8////////////////////////////*/
+.coworker_flex{
+    display: flex;
+    border: 2px solid #AEA954;
+    border-radius: 50px;
+    margin: 60px;
+    background-image: url(../img/logo_cowokers2.png);
+}
+.coworker_flex>div:first-child {
+	width: 25%;   
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.coworker_flex>div:last-child {
+	width: 65%;   
+}
+span{
+    font-weight: 700;
+    color: #AEA954;
+}
+.coworker_flex>div>img{
+    border-radius: 150px;
+    width: 250px;
+    height: 250px;    
+	object-fit: cover;
+}
+
+.coworkers_para>p{
+    width: 500px;
+    text-align: justify;
+}
+
+.des_cow{
+    margin: 50px 100px;
+}
+.des_cow>div>p{
+    text-align: left;
+    width: 100%;
+   margin-left: 0;
+}
+.coor_coworker{
+    display: in;
+}
+.coor_coworker>ul>li{
+    display: flex;
+}
+
+.coor_coworker > ul > ul > li:nth-child(2) {
+		margin-left: 15px;
+}
+
+.gros_parapgraphe > h1:first-child {
+	margin-top: 40px;
+}
+	
+li{
+    list-style: none;
+}
+.items{
+    display: flex;
+    
+}
+
+.items>li{
+    display: inline-block;
+
+}
+.info_coworker>ul>li{
+    display: flex;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+   
+    color: #4A9EC0;
+    font-size: 10px;
+}
+.position{
+    margin-left: 15px;
+    padding-bottom: 20px;
+}
+
+a:hover{
+    color: #AEA954;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width: 1000px) {
+    .coworker_flex {
+      /* display: block;
+      flex-direction: column;
+      margin-left: 0;
+      padding-left: 0; */
+      display: block;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 20%;
+      width: 60%;
+    } 
+    .coworker_flex>div:first-child {
+        width: 100%;   
+    }
+    .coworker_flex>div:last-child {
+        width: 50%;   
+    } 
+    .coworkers_para>p{
+        width: 100%;
+        text-align: center;
+        /* padding: 0;
+        margin-left: 0; */
+        margin-right: 100px;
+    }
+    .items{
+        display: block;
+    }
+    .coworker_flex>div>img{
+        margin-top: 30%;
+        border-radius: 50px;
+        margin-left: 150px;
+        width: 250px;
+        height: 250px;
+		object-fit: cover;
+    }
+    .coworkers_para>h2{
+        text-align: center;
+    }
+
+  }

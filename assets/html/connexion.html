@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_connexion.css">
+    <title>Connexion</title>
+</head>
+<body>
+    <main>
+        <section class="connexion">
+            <div class="container">
+            <!-- zone de connexion , creation de formulaire-->            
+                <form class="formContainer" autocomplete="off">
+                    <h1>Connexion</h1>
+                    <div class="row">
+                        <label>Votre Email</label>
+                        <input type="email" placeholder="Entrez votre email" name="mail" required>
+                    </div>
+                    <div class="row">
+                        <label>Mot de passe</label>
+                        <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+                    </div>
+                    <!--creation des boutons connexion et creation de compte. lien vers page incription pour le bouton creer compte-->
+                    <div class="btn">
+                    <input class="btnConnexion" type="submit" id="connectBtn" value="Connexion" >
+                    <a href="inscription.html"><input class="btnConnexion"  value="Creer un compte"></a>                
+                </div>
+            </form>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="../js/script_connexion.js"></script>
+</html>
